@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PAWS.master.cs" Inherits="Mendoza_JeromeIsaac_HWK4.PAWS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1000px;
+        }
+        .auto-style2 {
+            height: 104px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table align="center" class="auto-style1">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Image ID="Header" runat="server" ImageUrl="~/images/Header.png" Width="100%" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Image ID="Footer" runat="server" ImageUrl="~/images/footer.png" Width="100%" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
